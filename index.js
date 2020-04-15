@@ -2,7 +2,7 @@
  * @Author: xuxueliang
  * @Date: 2020-04-14 19:16:29
  * @LastEditors: xuxueliang
- * @LastEditTime: 2020-04-15 16:33:39
+ * @LastEditTime: 2020-04-15 17:35:47
  */
 /**socket.io在服务器端创建客户端*/
 const { asyncEmit } = require('./utils')
@@ -112,10 +112,10 @@ function get ({ table, key }) {
  * @param data 数据 是个 object
  * @return: 
  */
-function set ({ table, data }) {
+function set ({ table, data, params = {} }) {
   return new Promise((resolve, reject) => {
     if (config.isConnect) {
-      socket.asyncEmit('set', { table, data }).then(res => {
+      socket.asyncEmit('set', { table, data, params }).then(res => {
         resolve(res)
       })
     } else {
