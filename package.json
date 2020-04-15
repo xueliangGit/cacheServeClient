@@ -1,15 +1,31 @@
 {
   "name": "cache-serve-client",
   "version": "1.0.0",
-  "description": "cache-serve-client",
+  "description": "这是一个 node 端的缓存服务客户端，通过 cacheServe 来链接该服务",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "cache-serve-client",
+    "cache-serve",
+    "cacheServeClient",
+    "cacheServe",
+    "cache",
+    "server"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "socket.io-client": "^2.3.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xueliangGit/cacheServeClient.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xueliangGit/cacheServeClient/issues"
+  },
+  "homepage": "https://github.com/xueliangGit/cacheServeClient#readme"
 }
