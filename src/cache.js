@@ -2,9 +2,9 @@
  * @Author: xuxueliang
  * @Date: 2020-04-14 20:07:43
  * @LastEditors: xuxueliang
- * @LastEditTime: 2020-04-15 17:39:17
+ * @LastEditTime: 2020-04-16 11:58:37
  */
-const { getResult } = require('./util')
+const { getResult } = require('./utils')
 class Table {
   constructor(name) {
     this.name = name
